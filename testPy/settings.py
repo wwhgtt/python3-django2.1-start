@@ -30,7 +30,8 @@ DEBUG = True
 ALLOWED_HOSTS = []
 
 
-# Application definition
+# Application definition  应用注册 也可以理解成是model的注册
+# django.contrib是一套庞大的功能集，它是Django基本代码的组成部分。
 
 INSTALLED_APPS = [
     'django.contrib.admin',
@@ -39,7 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'TestModel', 
+    'TestModel',
 ]
 
 MIDDLEWARE = [
