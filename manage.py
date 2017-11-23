@@ -3,6 +3,7 @@ import os
 import sys
 
 if __name__ == "__main__":
+    # 设置入口文件 testPy.settings  同级目录
     os.environ.setdefault("DJANGO_SETTINGS_MODULE", "testPy.settings")
     try:
         from django.core.management import execute_from_command_line

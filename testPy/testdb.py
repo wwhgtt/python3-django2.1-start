@@ -8,4 +8,6 @@ from TestModel.models import Test
 def testdb(request):
     test1 = Test(name='root')
     test1.save()
-    return HttpResponse("<p>数据添加成功！</p>")
+    return HttpResponse("<p>test</p>")
+
+    # HttpResponse是view.py中render最终返回  可以直接在页面中展示

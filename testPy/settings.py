@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'TestModel',
 ]
-
+# 类似于koa的中间件
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -52,9 +52,10 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
-
+# settings.py中引入了urls, 模版  urls中注册了view search这些control控制器  control控制template中html的展示
+# 路由根元素　
 ROOT_URLCONF = 'testPy.urls'
-
+# html模版容器　
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
@@ -76,7 +77,7 @@ WSGI_APPLICATION = 'testPy.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/dev/ref/settings/#databases
-
+# 链接数据库 engine依赖mysqlclient  所以需要先安装好mysqlclient
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',  # 或者使用 mysql.connector.django
